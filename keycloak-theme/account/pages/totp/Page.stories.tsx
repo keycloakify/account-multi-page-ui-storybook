@@ -19,8 +19,7 @@ export const Default: Story = {
                 enabled: false,
                 totpSecretEncoded: "HE4W MSTC OBKU CY2M ONXF OV3Q NYYU I3SH",
                 totpSecret: "99fJbpUAcLsnWWpn1DnG",
-                manualUrl:
-                    "http://localhost:8080/realms/myrealm/account/totp?mode=manual",
+                manualUrl: "http://localhost:8080/realms/myrealm/account/totp?mode=manual",
                 totpSecretQrCode:
                     "iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2AQAAAADNaUdlAAACk0lEQVR4Xu2YQY6DMAxFjViw5AjcBC6GBBIXozfJEbpkger53wEKqOpmFvaikQYNeVRyHPvbiejXscp95jp+/D5zHT9+n7kO8qeIFDqKzjJo9dC1wUSPP7yG4IPq41lq9ZK+keLZSwXDGwMhOCZgdX4sBVD1qld+GYg/h6ScreBuIDo5FKfVM7Z8aWs9PB2E2/73DdOlwUrK9Ck+HDnzB7ziR8fjlD/OPI8pVQwCi899TkNw2M+tp9XSLFKPIq2UySIhBB906fCQTicFwiv1EUG6+d+bl4zPIYnUk5oIcS69/evPYStUp6P0dJhD/mhauijcth76mOsfw+GFrbfXKJx7LW2N15kijuWIMCYicLQOCEimDp1c0L8PzCLTs3/d+ZQLyl6VqeSIT9nz25szf2ZybHgC31yrXEQIbqaPjX0k9GqWy0N/nLkagsHWNXR0LZwsR357c0pjC6fm+meu5f6f6oszz/qj7GpYCdHf0LVH/gTgtJ/5bVavPJ9svwnBS9qaqwoHOh3G7Ln++HIIDgpKYpFW00dlkX7ruz836THBWQpzd23/xeDsFVroz15fRjsfMyaC8JX2Y8PZf+VIoKff+uTO6WSIUIfSkrl9/rbfnbPr30R8hnMtXA/98ea5lx4ZlSMgQlMsEnb73XnP+yNl/SuR3/lzTSZHMTirMpMcXjWr0U5Mp/rnzmk/TsXkC2/iKEJ5TRG4DZ5KrP/C0RiVmkp+5I8zN1uh2vv9Vs+bzJ4947Y+bz6wl6ZIcv87ZaU2+6PwnoKdb7VYmrf9Z02MxCmNdmparbVJtrA4nA+e9LgIS6dzfvly7j+4XWIuPJp8iE9PbvkzJHYNabt/o5MP+535t/Hj95nr+PH7zHX8m/8B+RAnloz5pi4AAAAASUVORK5CYII=",
                 policy: {
@@ -49,8 +48,7 @@ export const WithTotpEnabled: Story = {
                 enabled: true,
                 totpSecretEncoded: "G55E MZKC JFUD MQLT MFIF EVSB JFLG M6SO",
                 totpSecret: "7zFeBIh6AsaPRVAIVfzN",
-                manualUrl:
-                    "http://localhost:8080/realms/myrealm/account/totp?mode=manual",
+                manualUrl: "http://localhost:8080/realms/myrealm/account/totp?mode=manual",
                 supportedApplications: [
                     "totpAppFreeOTPName",
                     "totpAppMicrosoftAuthenticatorName",
@@ -95,8 +93,7 @@ export const WithManualMode: Story = {
                 enabled: false,
                 totpSecretEncoded: "KZ5H CYTW GBVV ASDE JRXG MMCK HAZU E6TX",
                 totpSecret: "Vzqbv0kPHdLnf0J83Bzw",
-                manualUrl:
-                    "http://localhost:8080/realms/myrealm/account/totp?mode=manual",
+                manualUrl: "http://localhost:8080/realms/myrealm/account/totp?mode=manual",
                 totpSecretQrCode:
                     "iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2AQAAAADNaUdlAAACpklEQVR4Xu2YQa6rMAxFXTFgyBLYSbsxJJC6sb6dZAkdMkDNv8cBStHTm/yBM2ikIpqTgePY1w6W/xyLnWc+x5efZz7Hl59nPgf8aWaXPFl+2ZhbzfWaGPTT3yr4mPPPs8nty4ZeKxfzRQ6q4IO1P8zq0c/iffvqtIlLTfw5psxsK3f7JirjTHDqWpQ3T9fC/fytn2956u32bNJv8RHIyZ/n0MvJh8cpvwJ5GffkQaBNYPo2auCyv30YVmtitm4yu1qT5mtXCR9svsqXeih1/I1IbZHLKniTskxPOvCGSB3Wud2/0Vz+5YH9uHZAvzORUAlXaXmY9FHxyZuWI0L5sfs3lkt1vDTbtVtM8bmovrCT26o/0bxozVAWIY3IuTLpsvk3mDNeRv9QqrJWEp+25Xc01/uMVudHpySiE3PXklN1cLSm8yCgKmuWICUIxip4vqM6Y+kalNX3hJNtz+9orgOXQ60noZPrd/H5u74E86I/pfXXm/obXPvOr2juVW8o9nsTS77T5Ix18CZ71sh+qQ7n3+LzY32J5WptXt291Bdaf8tcVw76Hcvpqr31R3CUOri7Q79r4ap61+5O12XoT1leOrFK+HZ/asga/sr0tz5F85wozWq4aMKcP1DK3f54Ttfv+a0iqG1wCU2H/iGWl156IionQYWmngTpan84H9aGy+8nl7I8J5ejOnjP0SNCC/0/lVpydKyPwZz7u/Xef80ouaRHHt7PP5j74BJFfBpJ3vLp460/wdxtxX5KM6XPMvktJ6/7i+YjvfRS/Gs3za3218LJH5qwzKKf7fzd3fXwEWmkf5WTKS3JN1YRTxKhiY9IC6mzUKmP/g3knL8cqoeUiKvJL/EZyT1/sJ/vg+X7G07e7Q/mf40vP898ji8/z3yO/+b/ANUwOXCzdQgqAAAAAElFTkSuQmCC",
                 policy: {
@@ -113,8 +110,7 @@ export const WithManualMode: Story = {
                 internationalizationEnabled: false
             },
             url: {
-                totpUrl:
-                    "http://localhost:8080/realms/myrealm/account/totp?mode=manual"
+                totpUrl: "http://localhost:8080/realms/myrealm/account/totp?mode=manual"
             }
         }
     }
@@ -127,8 +123,7 @@ export const MoreThanOneTotpProviders: Story = {
                 enabled: true,
                 totpSecretEncoded: "G55E MZKC JFUD MQLT MFIF EVSB JFLG M6SO",
                 totpSecret: "7zFeBIh6AsaPRVAIVfzN",
-                manualUrl:
-                    "http://localhost:8080/realms/myrealm/account/totp?mode=manual",
+                manualUrl: "http://localhost:8080/realms/myrealm/account/totp?mode=manual",
                 supportedApplications: [
                     "totpAppFreeOTPName",
                     "totpAppMicrosoftAuthenticatorName",

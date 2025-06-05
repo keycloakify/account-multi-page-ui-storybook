@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { createKcPageStory } from "../../mocks/KcPageStory";
 
 const { KcPageStory } = createKcPageStory({ pageId: "account.ftl" });
@@ -12,9 +12,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
-    render: () => <KcPageStory />
-};
+export const Default: Story = {};
 
 /**
  * UsernameNotEditable:
@@ -23,32 +21,30 @@ export const Default: Story = {
  * - Key Aspect: Ensures that the `editUsernameAllowed` condition is respected and the username field is read-only.
  */
 export const UsernameNotEditable: Story = {
-    render: () => (
-        <KcPageStory
-            kcContext={{
-                account: {
-                    username: "john_doe",
-                    email: "john.doe@gmail.com",
-                    firstName: "John",
-                    lastName: "Doe"
-                },
-                realm: {
-                    registrationEmailAsUsername: false,
-                    editUsernameAllowed: false
-                },
-                referrer: {
-                    url: "/home"
-                },
-                url: {
-                    accountUrl: "/account"
-                },
-                messagesPerField: {
-                    printIfExists: () => ""
-                },
-                stateChecker: "state-checker"
-            }}
-        />
-    )
+    args: {
+        kcContext: {
+            account: {
+                username: "john_doe",
+                email: "john.doe@gmail.com",
+                firstName: "John",
+                lastName: "Doe"
+            },
+            realm: {
+                registrationEmailAsUsername: false,
+                editUsernameAllowed: false
+            },
+            referrer: {
+                url: "/home"
+            },
+            url: {
+                accountUrl: "/account"
+            },
+            messagesPerField: {
+                printIfExists: () => ""
+            },
+            stateChecker: "state-checker"
+        }
+    }
 };
 
 /**
@@ -58,33 +54,31 @@ export const UsernameNotEditable: Story = {
  * - Key Aspect: Ensures that error messages are properly displayed and the user can correct their inputs.
  */
 export const WithValidationErrors: Story = {
-    render: () => (
-        <KcPageStory
-            kcContext={{
-                account: {
-                    username: "john_doe",
-                    email: "",
-                    firstName: "",
-                    lastName: "Doe"
-                },
-                realm: {
-                    registrationEmailAsUsername: false,
-                    editUsernameAllowed: true
-                },
-                referrer: {
-                    url: "/home"
-                },
-                url: {
-                    accountUrl: "/account"
-                },
-                messagesPerField: {
-                    printIfExists: <T,>(fieldName: string, x: T) =>
-                        fieldName === "email" || fieldName === "firstName" ? x : undefined
-                },
-                stateChecker: "state-checker"
-            }}
-        />
-    )
+    args: {
+        kcContext: {
+            account: {
+                username: "john_doe",
+                email: "",
+                firstName: "",
+                lastName: "Doe"
+            },
+            realm: {
+                registrationEmailAsUsername: false,
+                editUsernameAllowed: true
+            },
+            referrer: {
+                url: "/home"
+            },
+            url: {
+                accountUrl: "/account"
+            },
+            messagesPerField: {
+                printIfExists: <T,>(fieldName: string, x: T) =>
+                    fieldName === "email" || fieldName === "firstName" ? x : undefined
+            },
+            stateChecker: "state-checker"
+        }
+    }
 };
 /**
  * EmailAsUsername:
@@ -93,28 +87,26 @@ export const WithValidationErrors: Story = {
  * - Key Aspect: Ensures the form functions correctly when `registrationEmailAsUsername` is enabled.
  */
 export const EmailAsUsername: Story = {
-    render: () => (
-        <KcPageStory
-            kcContext={{
-                account: {
-                    email: "john.doe@gmail.com",
-                    firstName: "John",
-                    lastName: "Doe"
-                },
-                realm: {
-                    registrationEmailAsUsername: true
-                },
-                referrer: {
-                    url: "/home"
-                },
-                url: {
-                    accountUrl: "/account"
-                },
-                messagesPerField: {
-                    printIfExists: () => ""
-                },
-                stateChecker: "state-checker"
-            }}
-        />
-    )
+    args: {
+        kcContext: {
+            account: {
+                email: "john.doe@gmail.com",
+                firstName: "John",
+                lastName: "Doe"
+            },
+            realm: {
+                registrationEmailAsUsername: true
+            },
+            referrer: {
+                url: "/home"
+            },
+            url: {
+                accountUrl: "/account"
+            },
+            messagesPerField: {
+                printIfExists: () => ""
+            },
+            stateChecker: "state-checker"
+        }
+    }
 };

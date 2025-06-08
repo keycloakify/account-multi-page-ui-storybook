@@ -1,6 +1,6 @@
 {
     "name": "@keycloakify/account-multi-page-ui-storybook",
-    "version": "210102.0.4",
+    "version": "210102.0.5",
     "description": "Storybook stories for @keycloakify/account-multi-page-ui",
     "repository": {
         "type": "git",

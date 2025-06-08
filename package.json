@@ -1,10 +1,10 @@
 {
-    "name": "@keycloakify/keycloak-account-multi-page-ui-storybook",
+    "name": "@keycloakify/account-multi-page-ui-storybook",
     "version": "210102.0.4",
-    "description": "Storybook stories for @keycloakify/keycloak-account-multi-page-ui",
+    "description": "Storybook stories for @keycloakify/account-multi-page-ui",
     "repository": {
         "type": "git",
-        "url": "git://github.com/keycloakify/keycloak-account-multi-page-ui-storybook"
+        "url": "git://github.com/keycloakify/account-multi-page-ui-storybook"
     },
     "scripts": {
         "_format": "prettier '**/*.{ts,tsx,json,md}'",

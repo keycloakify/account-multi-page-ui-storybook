@@ -1,4 +1,4 @@
-import type { DeepPartial } from "@keycloakify/keycloak-account-multi-page-ui/tools/DeepPartial";
+import type { DeepPartial } from "@keycloakify/account-multi-page-ui/tools/DeepPartial";
 import { getKcContextMock } from "./getKcContextMock";
 import type { KcContext } from "../KcContext";
 import KcPage from "../KcPage";
